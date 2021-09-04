@@ -1,8 +1,8 @@
-﻿using GuinHttpWebW.Attributes.HttpContentType;
-using GuinHttpWebW.Attributes.HttpHeader;
-using GuinHttpWebW.Attributes.HttpMethod;
-using GuinHttpWebW.Attributes.HttpParameter;
-using GuinHttpWebW.Extensions;
+﻿using GuinHttp.Attributes.HttpContentType;
+using GuinHttp.Attributes.HttpHeader;
+using GuinHttp.Attributes.HttpMethod;
+using GuinHttp.Attributes.HttpParameter;
+using GuinHttp.Extensions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -13,9 +13,9 @@ using System.Reflection;
 using System.Text;
 using System.Web;
 
-namespace GuinHttpWebW
+namespace GuinHttp
 {
-    public class GuinHttpWebW
+    public class GuinHttp
     {
 
         #region Property
@@ -26,35 +26,35 @@ namespace GuinHttpWebW
 
         #region Constructor
 
-        private GuinHttpWebW(string baseUrl)
+        private GuinHttp(string baseUrl)
         {
             BaseUrl = baseUrl;
         }
 
-        public static GuinHttpWebWBuilder Builder(string baseUrl)
+        public static GuinHttpBuilder Builder(string baseUrl)
         {
-            return new GuinHttpWebWBuilder(baseUrl);
+            return new GuinHttpBuilder(baseUrl);
         }
 
 
-        public class GuinHttpWebWBuilder
+        public class GuinHttpBuilder
         {
-            private GuinHttpWebW guinHttpWebW;
+            private GuinHttp GuinHttp;
 
-            public GuinHttpWebWBuilder(string baseUrl)
+            public GuinHttpBuilder(string baseUrl)
             {
-                guinHttpWebW = new GuinHttpWebW(baseUrl);
+                GuinHttp = new GuinHttp(baseUrl);
             }
 
-            public GuinHttpWebWBuilder SetTimeOut(int timeout)
+            public GuinHttpBuilder SetTimeOut(int timeout)
             {
-                guinHttpWebW.Timeout = timeout;
+                GuinHttp.Timeout = timeout;
                 return this;
             }
 
-            public GuinHttpWebW Build()
+            public GuinHttp Build()
             {
-                return guinHttpWebW;
+                return GuinHttp;
             }
 
         }

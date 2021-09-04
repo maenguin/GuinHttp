@@ -7,8 +7,8 @@
     <ProjectGuid>{271672D6-55F4-4987-ACDA-C1DA90CDA9B6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GuinHttpWebW</RootNamespace>
-    <AssemblyName>GuinHttpWebW</AssemblyName>
+    <RootNamespace>GuinHttp</RootNamespace>
+    <AssemblyName>GuinHttp</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -79,7 +79,7 @@
     <Compile Include="Attributes\HttpParameter\BodyAttribute.cs" />
     <Compile Include="Attributes\HttpParameter\QueryAttribute.cs" />
     <Compile Include="Extensions\AttributeExtension.cs" />
-    <Compile Include="GuinHttpWebW.cs" />
+    <Compile Include="GuinHttp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util.cs" />
   </ItemGroup>

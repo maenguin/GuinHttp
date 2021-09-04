@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GuinHttpWebW.Attributes.HttpContentType
+namespace GuinHttp.Attributes.HttpContentType
 {
     [System.AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class FormUrlEncodedAttribute : HttpContentTypeAttribute

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace GuinHttpWebW.Extensions
+namespace GuinHttp.Extensions
 {
     public static class AttributeExtension
     {

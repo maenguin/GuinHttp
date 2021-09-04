@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GuinHttpWebW.Attributes.HttpHeader
+namespace GuinHttp.Attributes.HttpHeader
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class HttpHeadersAttribute : Attribute

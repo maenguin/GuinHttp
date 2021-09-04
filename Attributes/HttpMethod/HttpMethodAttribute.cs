@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GuinHttpWebW.Attributes.HttpMethod
+namespace GuinHttp.Attributes.HttpMethod
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class HttpMethodAttribute : Attribute
